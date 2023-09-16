@@ -3,6 +3,9 @@ import { blogLinks } from "../constants"
 
 const BlogCard = ({links}) => {
   return (
+
+    // BLOG CONTENT
+
     <div className='flex flex-row flex-wrap gap-4 py-3'>
         {links.map((link) => (
           <div className="border-solid border border-black rounded-3xl max-w-[260px]">
@@ -10,12 +13,18 @@ const BlogCard = ({links}) => {
               href=""
               className=""
               >
+
+                {/* IMAGE */}
+
               <div className="">
                 <img 
                 src={link.image} 
                 alt="image" 
                 className="rounded-t-3xl "/>
               </div>
+
+              {/* TITLE & DESCRIPTION */}
+
               <div className="p-5 max-w-[260px]">
                 <h4 className={`${styles.heading4} pb-2`}>
                   {link.title}

@@ -3,7 +3,13 @@ import { purposeInfo } from "../constants"
 
 const PurposeCard = ({num}) => {
   return (
+
+    // PURPOSE CARD
+
     <div className="flex py-5">
+
+        {/* TITLE & DESCRIPTION */}
+
         <div className="max-w-[410px]">
             <h3 className={`${styles.heading3} pb-3`}>
                 {purposeInfo[num].title}
@@ -12,6 +18,9 @@ const PurposeCard = ({num}) => {
                 {purposeInfo[num].paragraph}
             </p>
         </div>
+
+        {/* IMAGE */}
+        
         <div>
             <img 
             src={purposeInfo[num].image} 

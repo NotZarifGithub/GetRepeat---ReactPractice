@@ -6,7 +6,7 @@ const HeroCard = ({num}) => {
   return (
     <div>
 
-    {/* HEADING */}
+      {/* HEADING */}
 
       <h1 className={`${styles.heading1}`}>
         {heroLinks[num].title}
