@@ -21,7 +21,7 @@ const Footer = () => {
       </div>
       <div className="flex gap-4 py-8">
         {footerLinks.map((link) => (
-          <h4 className={`${styles.heading4} text-white font-light`}>
+          <h4 className={`${styles.heading4} text-white font-light cursor-pointer`}>
             {link.title}
           </h4>
         ))}
